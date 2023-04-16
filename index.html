@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="contenedor">
+        <article class="caja caja-texto">
+            <div>
+                <h1 class="titulo">Encriptador de texto</h1>
+                <textarea cols="30" rows="10" id="textoIngresado" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div>
+                <p class="mensaje-error"><i class='bx bxs-error-circle'></i>Solo letras minusculas y sin acentos</p>
+                <div class="botones-caja">
+                    <button class="btnEncriptar">Encriptar</button>
+                    <button class="btnDesencriptar">Desencriptar</button>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="caja caja-resultado">
+            <div class="caja-resultado2">
+                <figure class="caja-resultado-img">
+                    <img src="img/img1.svg" alt="img">
+                </figure>
+                <div class="caja-resultado-texto">
+                    <p>Ningún mensaje fue encontrado</p>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <button class="btnCopiar">Copiar</button>
+        </article>
+    </section>
+
+    <div class="toggle">
+        <i class='bx bxs-moon icon moon'></i>
+        <i class='bx bxs-sun icon sun'></i>
+    </div>
+
+<script src="code.js"></script>
+</body>
+</html>
